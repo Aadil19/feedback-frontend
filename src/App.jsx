@@ -5,7 +5,7 @@ import FeedbackList from "./components/FeedbackList";
 
 function App() {
   const [feedbacks, setFeedbacks] = useState([]);
-  const API_URL = "http://localhost:3000/api/feedback"; // change after deploy
+  const API_URL = "https://feedback-backend-liwo.onrender.com/api/feedback"; // change after deploy
 
   useEffect(() => {
     axios.get(API_URL).then((res) => setFeedbacks(res.data));
